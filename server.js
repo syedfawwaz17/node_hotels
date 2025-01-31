@@ -75,10 +75,11 @@ const Person = require('./models/person');
 const menu = require('./models/menu');
 const personRoutes = require('./routes/personRoutes')
 const menuRoutes = require('./routes/menuroutes')
+
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
-
+const PORT = process.env.PORT || 3000
 
 
 app.get('/', function (req, res) {
@@ -156,7 +157,7 @@ app.get('/', function (req, res) {
 app.use('/person',personRoutes)
 app.use('/menu',menuRoutes)
 
-
+//Comment added for testing
 
 app.listen(3000,()=>{
     console.log("Server is listening on port 3000");
