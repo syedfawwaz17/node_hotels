@@ -75,6 +75,7 @@ const Person = require('./models/person');
 const menu = require('./models/menu');
 const personRoutes = require('./routes/personRoutes')
 const menuRoutes = require('./routes/menuroutes')
+require('dotenv').config();
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
