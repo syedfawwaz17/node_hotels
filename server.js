@@ -28,7 +28,7 @@ app.get('/', function (req, res) {
 
 
 
-app.use('/person',localAuth,personRoutes)
+app.use('/person',personRoutes)
 app.use('/menu',menuRoutes)
 
 //Comment added for testing
